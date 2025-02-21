@@ -89,7 +89,7 @@ const About = () => {
       <section className="py-24 bg-white">
         <div className="section-container">
           <h2 className="heading-lg text-center mb-16">Core Competencies</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skills.map((skill, index) => (
               <motion.div
                 key={skill.title}
