@@ -117,14 +117,17 @@ const About = () => {
             >
               <h1 className="heading-xl mb-6">About Me</h1>
               <p className="paragraph mb-6">
-                As an International Trade & Marketing student, I'm passionate about understanding global markets
-                and creating compelling digital content. My journey combines academic excellence with practical
-                experience in digital marketing and content creation.
+              My fascination with business and global markets began back in high school when I joined the organizational committee of an international cultural exchange event. I was captivated by the challenge of coordinating logistics, promoting the event, and engaging with a diverse group of people. Little did I know, this was the beginning of my journey into international trade, marketing, and business strategy.
               </p>
               <p className="paragraph">
-                When I'm not analyzing market trends or crafting marketing strategies, you can find me creating
-                content for my YouTube channel, where I share insights about international business and marketing
-                with a growing community of aspiring professionals.
+              Currently, I’m pursuing my studies in International Trade at ISCID-CO, where I’ve deepened my understanding of global markets, business operations, and strategic marketing. This academic foundation has fueled my passion for exploring how businesses grow and expand internationally while connecting meaningfully with diverse audiences.
+
+              </p>
+              <p className="paragraph">
+              Throughout my academic journey, I’ve become particularly interested in the intersection of marketing, digital branding, and consumer behavior. I believe that business is more than just transactions—it’s about storytelling, connection, and impact. What excites me most is helping companies craft compelling brand strategies, optimize sales funnels, and analyze market trends to find creative, data-driven solutions that drive growth.
+              </p>
+              <p className="paragraph">
+              I am especially passionate about building relationships across borders and positioning businesses to succeed in competitive markets. My goal is to work with teams that value innovation, global strategy, and meaningful brand engagement, turning ambitious ideas into reality.
               </p>
             </motion.div>
           </div>
