@@ -73,7 +73,7 @@ const About = () => {
       category: 'Volunteer Work',
       items: [
         {
-          title: 'Digital Marketing Volunteer',
+          title: 'FLOPPPP Digital Marketing Volunteer',
           company: 'Local Non-Profit Organization',
           period: 'Jan 2024 - Present',
           description: 'Providing pro-bono digital marketing services to help local businesses.',
