@@ -57,7 +57,7 @@ const About = () => {
               transition={{ delay: 0.2 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e"
+                src="/photoHiba.jpg"
                 alt="Professional headshot"
                 className="rounded-lg shadow-xl"
               />
@@ -86,7 +86,7 @@ const About = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-24 bg-white">
+      <section className="py-8 bg-white">
         <div className="section-container">
           <h2 className="heading-lg text-center mb-16">Core Competencies</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -109,7 +109,7 @@ const About = () => {
       </section>
 
 {/* Education Section */}
-<section className="py-24 bg-white">
+<section className="py-0 bg-white">
   <div className="section-container">
     <h2 className="heading-lg text-center mb-16">Education</h2>
     <div className="max-w-3xl mx-auto space-y-12">
