@@ -62,7 +62,7 @@ const Navbar = () => {
 >
   <span className="flex items-center gap-2">
     <FileText size={18} />
-    Resume
+    CV EN
   </span>
 </a>
 <a
@@ -73,7 +73,7 @@ const Navbar = () => {
 >
   <span className="flex items-center gap-2">
     <FileText size={18} />
-    FR
+    CV FR
   </span>
 </a>
           </div>
@@ -124,7 +124,7 @@ const Navbar = () => {
               >
                 <span className="flex items-center gap-2">
                   <FileText size={18} />
-                  Resume
+                  CV EN
                 </span>
               </a>
               <a
@@ -135,7 +135,7 @@ const Navbar = () => {
               >
                 <span className="flex items-center gap-2">
                   <FileText size={18} />
-                  FR
+                  CV FR
                 </span>
               </a>
             </div>
