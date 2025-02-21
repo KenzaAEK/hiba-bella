@@ -21,7 +21,7 @@ const Home = () => {
               transition={{ delay: 0.2 }}
               className="heading-xl mb-6"
             >
-              International Trade & Marketing Student
+              Im hiba the fem queen International Trade & Marketing Student
             </motion.h1>
             <motion.p
               initial={{ y: 20, opacity: 0 }}
