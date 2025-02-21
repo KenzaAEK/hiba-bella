@@ -1,92 +1,44 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Globe, Camera, Youtube, Calendar, Building, Users, Heart } from 'lucide-react';
+import { BookOpen, Globe, Camera, Youtube, Calendar, Building, Users, Heart, Target, BarChart, CalendarCheck, Languages } from 'lucide-react';
+
 
 const About = () => {
   const skills = [
-    { icon: Globe, title: 'International Trade', description: 'Specializing in global market analysis and cross-border commerce' },
-    { icon: BookOpen, title: 'Marketing Strategy', description: 'Creating data-driven marketing campaigns and brand strategies' },
-    { icon: Camera, title: 'Content Creation', description: 'Producing engaging visual content for digital platforms' },
-    { icon: Youtube, title: 'Video Production', description: 'Managing a growing YouTube channel focused on business insights' },
+    {
+      icon: Globe,
+      title: 'International Trade',
+      description: 'Specializing in global market analysis, international transactions, and client portfolio management.',
+    },
+    {
+      icon: Target,
+      title: 'Marketing Strategy & Brand Positioning',
+      description: 'Creating data-driven marketing strategies, enhancing brand visibility, and expanding international outreach.',
+    },
+    {
+      icon: Users,
+      title: 'Digital Marketing & Social Media',
+      description: 'Managing content creation, campaigns, and customer engagement across digital platforms.',
+    },
+    {
+      icon: BarChart,
+      title: 'Data Analytics & SPSS',
+      description: 'Analyzing data to support strategic decision-making and marketing optimization.',
+    },
+    {
+      icon: CalendarCheck,
+      title: 'Project Management & Event Coordination',
+      description: 'Leading successful events, managing logistics, and coordinating teams for impactful outcomes.',
+    },
+    {
+      icon: Languages,
+      title: 'Languages & Multicultural Communication',
+      description: `
+        Fluent in multiple languages (English, French, Arabic, Spanish, Chinese, Korean), enhancing international collaboration and cross-cultural communication
+      `,
+    },
   ];
 
-  const experiences = [
-    {
-      category: 'Professional Experience',
-      items: [
-        {
-          title: 'Digital Marketing Intern',
-          company: 'Global Commerce Solutions',
-          period: 'Jun 2023 - Present',
-          description: 'Leading social media strategy and content creation, resulting in 150% increase in engagement.',
-          achievements: [
-            'Developed and executed multi-channel marketing campaigns',
-            'Analyzed market trends and competitor strategies',
-            'Created weekly content for company blog and newsletter',
-            'Collaborated with international teams across different time zones'
-          ]
-        },
-        {
-          title: 'Marketing Research Assistant',
-          company: 'University Business Department',
-          period: 'Jan 2023 - May 2023',
-          description: 'Assisted in research projects focusing on international market trends.',
-          achievements: [
-            'Conducted primary research with 200+ participants',
-            'Analyzed data using advanced statistical methods',
-            'Contributed to two published research papers',
-            'Presented findings at student research symposium'
-          ]
-        }
-      ]
-    },
-    {
-      category: 'Leadership & Activities',
-      items: [
-        {
-          title: 'President',
-          company: 'International Business Club',
-          period: 'Sep 2023 - Present',
-          description: 'Leading a student organization of 50+ members focused on global business education.',
-          achievements: [
-            'Organized 5 networking events with industry professionals',
-            'Managed annual budget of $10,000',
-            'Increased membership by 40% through targeted outreach',
-            'Established mentorship program connecting students with alumni'
-          ]
-        },
-        {
-          title: 'Event Coordinator',
-          company: 'Marketing Society',
-          period: 'Mar 2023 - Present',
-          description: 'Coordinating professional development events and workshops.',
-          achievements: [
-            'Successfully planned and executed 8 major events',
-            'Managed team of 6 volunteers',
-            'Secured sponsorships worth $5,000',
-            'Achieved 95% positive feedback from attendees'
-          ]
-        }
-      ]
-    },
-    {
-      category: 'Volunteer Work',
-      items: [
-        {
-          title: 'FLOPPPP Digital Marketing Volunteer',
-          company: 'Local Non-Profit Organization',
-          period: 'Jan 2024 - Present',
-          description: 'Providing pro-bono digital marketing services to help local businesses.',
-          achievements: [
-            'Created social media strategy for 3 small businesses',
-            'Conducted workshops on digital marketing basics',
-            'Helped businesses increase online presence by 200%',
-            'Mentored 5 business owners in social media management'
-          ]
-        }
-      ]
-    }
-  ];
 
   return (
     <motion.div
@@ -116,14 +68,13 @@ const About = () => {
               transition={{ delay: 0.3 }}
             >
               <h1 className="heading-xl mb-6">About Me</h1>
-              <p className="paragraph mb-6">
+              <p className="paragraph mb-6">  
               My fascination with business and global markets began back in high school when I joined the organizational committee of an international cultural exchange event. I was captivated by the challenge of coordinating logistics, promoting the event, and engaging with a diverse group of people. Little did I know, this was the beginning of my journey into international trade, marketing, and business strategy.
               </p>
-              <p className="paragraph">
+              <p className="paragraph mb-6">  
               Currently, I’m pursuing my studies in International Trade at ISCID-CO, where I’ve deepened my understanding of global markets, business operations, and strategic marketing. This academic foundation has fueled my passion for exploring how businesses grow and expand internationally while connecting meaningfully with diverse audiences.
-
               </p>
-              <p className="paragraph">
+              <p className="paragraph mb-6">  
               Throughout my academic journey, I’ve become particularly interested in the intersection of marketing, digital branding, and consumer behavior. I believe that business is more than just transactions—it’s about storytelling, connection, and impact. What excites me most is helping companies craft compelling brand strategies, optimize sales funnels, and analyze market trends to find creative, data-driven solutions that drive growth.
               </p>
               <p className="paragraph">
@@ -157,82 +108,44 @@ const About = () => {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section className="py-24 bg-pastel-peach/30">
-        <div className="section-container">
-          <h2 className="heading-lg text-center mb-16">Experience & Achievements</h2>
-          <div className="space-y-16">
-            {experiences.map((category, categoryIndex) => (
-              <motion.div
-                key={category.category}
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: categoryIndex * 0.2 }}
-              >
-                <h3 className="text-2xl font-serif font-semibold mb-8 flex items-center gap-3">
-                  {category.category === 'Professional Experience' && <Building className="text-text-primary" />}
-                  {category.category === 'Leadership & Activities' && <Users className="text-text-primary" />}
-                  {category.category === 'Volunteer Work' && <Heart className="text-text-primary" />}
-                  {category.category}
-                </h3>
-                <div className="grid md:grid-cols-2 gap-8">
-                  {category.items.map((item, itemIndex) => (
-                    <motion.div
-                      key={item.title}
-                      initial={{ y: 20, opacity: 0 }}
-                      whileInView={{ y: 0, opacity: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: (categoryIndex * 0.2) + (itemIndex * 0.1) }}
-                      className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                    >
-                      <div className="flex items-center gap-2 text-text-secondary mb-2">
-                        <Calendar size={16} />
-                        <span className="text-sm">{item.period}</span>
-                      </div>
-                      <h4 className="text-xl font-semibold mb-1">{item.title}</h4>
-                      <p className="text-text-secondary mb-4">{item.company}</p>
-                      <p className="text-text-secondary mb-4">{item.description}</p>
-                      <ul className="space-y-2">
-                        {item.achievements.map((achievement, index) => (
-                          <li key={index} className="flex items-start gap-2">
-                            <span className="text-pastel-lavender mt-1">•</span>
-                            <span className="text-text-secondary">{achievement}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+{/* Education Section */}
+<section className="py-24 bg-white">
+  <div className="section-container">
+    <h2 className="heading-lg text-center mb-16">Education</h2>
+    <div className="max-w-3xl mx-auto space-y-12">
 
-      {/* Education Section */}
-      <section className="py-24 bg-white">
-        <div className="section-container">
-          <h2 className="heading-lg text-center mb-16">Education</h2>
-          <div className="max-w-3xl mx-auto">
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              className="bg-pastel-beige p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-            >
-              <h3 className="font-serif text-2xl font-semibold mb-2">Bachelor of Science in International Trade</h3>
-              <p className="text-text-secondary mb-4">Expected Graduation 2025</p>
-              <ul className="list-disc list-inside text-text-secondary space-y-2">
-                <li>Major in International Business Relations</li>
-                <li>Minor in Digital Marketing</li>
-                <li>GPA: 3.8/4.0</li>
-                <li>Relevant Coursework: Global Market Analysis, Digital Marketing Strategy, International Economics</li>
-              </ul>
-            </motion.div>
+      {/* Dual Degree Program */}
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        className="bg-pastel-beige p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+      >
+        <h3 className="font-serif text-2xl font-semibold mb-2">Dual Degree Program</h3>
+        <div className="space-y-6">
+          {/* ISCID-CO International Business School */}
+          <div>
+            <h4 className="font-semibold text-xl">ISCID-CO International Business School</h4>
+            <p className="italic text-text-secondary mb-2">Dunkerque, France | 2024–2026</p>
+            <ul className="list-disc list-inside text-text-secondary space-y-2">
+              <li>Leadership, Data Analysis, Advanced Excel Functions, E-Marketing</li>
+              <li>Customs Regulations, Market Research, Production Management</li>
+              <li>Intellectual Property, International Negotiation</li>
+            </ul>
+          </div>
+
+          {/* National School of Commerce and Management */}
+          <div>
+            <h4 className="font-semibold text-xl">National School of Commerce and Management (ENCG-T)</h4>
+            <p className="italic text-text-secondary mb-2">Tangier, Morocco | 2021–2026</p>
+            <p className="text-text-secondary">Diplôme des Grandes Écoles de Commerce et de Gestion</p>
           </div>
         </div>
-      </section>
+      </motion.div>
+      
+    </div>
+  </div>
+</section>
     </motion.div>
   );
 };
