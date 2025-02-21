@@ -39,7 +39,7 @@ const Navbar = () => {
               to="/"
               className="font-serif text-2xl font-bold text-text-primary hover:opacity-80 transition-opacity"
             >
-              Portfolio
+              Hiba Bella's Portfolio
             </Link>
           </div>
 

@@ -11,46 +11,56 @@ const Home = () => {
       exit={{ opacity: 0 }}
       className="min-h-screen pt-16"
     >
-      {/* Hero Section */}
-      <section className="h-screen flex items-center bg-gradient-to-b from-pastel-peach to-pastel-beige">
-        <div className="section-container">
-          <div className="max-w-3xl">
-            <motion.h1
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="heading-xl mb-6"
-            >
-              Im hiba the fem queen International Trade & Marketing Student
-            </motion.h1>
-            <motion.p
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="paragraph mb-8"
-            >
-              Exploring the intersection of global commerce, digital marketing, and creative content creation.
-              Join me on my journey through international business and beyond.
-            </motion.p>
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              className="flex gap-4"
-            >
-              <Link to="/projects" className="button-primary flex items-center gap-2">
-                View My Work
-                <ArrowRight size={20} />
-              </Link>
-              <Link to="/contact" className="button-primary bg-white">
-                Get in Touch
-              </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+{/* Hero Section */}
+<section className="h-screen flex items-center bg-gradient-to-b from-pastel-peach to-pastel-beige">
+  <div className="section-container">
+    <div className="max-w-3xl">
+      <motion.h1
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.2 }}
+        className="heading-xl mb-4"
+      >
+        Hi, I'm Hiba —
+      </motion.h1>
+      <motion.h2
+        initial={{ y: 10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.3 }}
+        className="heading-lg mb-6 whitespace-nowrap"
+      >
+        International Trade & Marketing Enthusiast
+      </motion.h2>
+      <motion.p
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.4 }}
+        className="paragraph mb-8"
+      >
+        Passionate about global commerce, digital marketing, and creative content creation. 
+        I thrive on exploring innovative solutions, enhancing brand visibility, and navigating 
+        the dynamic world of international business.
+      </motion.p>
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.5 }}
+        className="flex gap-4"
+      >
+        <Link to="/projects" className="button-primary flex items-center gap-2">
+          View My Work
+          <ArrowRight size={20} />
+        </Link>
+        <Link to="/contact" className="button-primary bg-white">
+          Get in Touch
+        </Link>
+      </motion.div>
+    </div>
+  </div>
+</section>
 
-      {/* Featured Section */}
+{/*
+{/* Featured Section 
       <section className="py-24 bg-white">
         <div className="section-container">
           <h2 className="heading-lg mb-12 text-center">Featured Work</h2>
@@ -91,7 +101,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </motion.div>
+*/}
+    </motion.div> 
   );
 };
 
