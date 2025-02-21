@@ -54,15 +54,28 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button-secondary flex items-center gap-2 !py-2"
-            >
-              <FileText size={18} />
-              Resume
-            </a>
+<a
+  href="/resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:bg-pastel-lavender/50"
+>
+  <span className="flex items-center gap-2">
+    <FileText size={18} />
+    Resume
+  </span>
+</a>
+<a
+  href="/cvFR.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:bg-pastel-lavender/50"
+>
+  <span className="flex items-center gap-2">
+    <FileText size={18} />
+    FR
+  </span>
+</a>
           </div>
 
           {/* Mobile Navigation Button */}
@@ -103,17 +116,28 @@ const Navbar = () => {
                   {item.label}
                 </Link>
               ))}
-<a
-  href="/resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:bg-pastel-lavender/50"
->
-  <span className="flex items-center gap-2">
-    <FileText size={18} />
-    Resume
-  </span>
-</a>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:bg-pastel-lavender/50"
+              >
+                <span className="flex items-center gap-2">
+                  <FileText size={18} />
+                  Resume
+                </span>
+              </a>
+              <a
+                href="/cvFR.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:bg-pastel-lavender/50"
+              >
+                <span className="flex items-center gap-2">
+                  <FileText size={18} />
+                  FR
+                </span>
+              </a>
             </div>
           </motion.div>
         )}
